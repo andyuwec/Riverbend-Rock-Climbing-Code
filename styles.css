@@ -79,9 +79,96 @@ nav{
     background-color: #fff;
     color: #1e212b;
     text-align: center;
+    margin: 1.5rem;
+    margin-top: 2rem;
+    padding: .75rem;
+    padding-left: 0.1;
+    padding-right: 0.1;
+    padding-bottom: 1.5rem;
+}
+.memberships-sec h2{
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+#pay-link{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #1e212b;
+    background-color: #ff8427;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+#pay-link:hover{
+    background-color: #ffc800;
+}
+.memberships-sec p{
+    font-size: 1.25rem;
 }
 .memberships{
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% auto 10%;
+    grid-gap: 1rem;
+}
+.length{
+    text-align: right;
+}
+.cost{
+    text-align: left;
+}
+
+.waiver{
+    background-color: #fff;
+    color: #1e212b;
+    padding: 1rem;
+    margin: 2rem 1rem;
+}
+.waiver a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #041a65;
+}
+.waiver a:hover{
+    text-decoration: underline;
+    color: #ff8427;
+}
+.waiver a:visited{
+    text-decoration: none;
+    color: #ffc800;
+}
+.payment{
+    background-color: #fff;
+    padding: .75rem;
+    margin: 2rem 1rem;
+}
+.payment legend{
+font-weight: 900;
+font-size: 2rem;
+}
+.payment label{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+.payment fieldset{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type=submit], input[type=reset]{
+    background-color: #ff8427;
+    color: #1e212b;
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+footer{
+    background-color: #fff;
+    margin: -1rem;
+    margin-top: 0;
+    padding: .5rem;
 }
 .footer-social img{
     max-width: 70%;

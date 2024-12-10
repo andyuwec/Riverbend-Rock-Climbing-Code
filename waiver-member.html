@@ -20,23 +20,11 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
-        <h1>Riverbend Rock Climbing</h1>
-        <div class="web-nav">
-            <span class="drop-header" onclick="toggleNav()">
-                <hr>
-                <hr>
-                <hr>
-            </span>
-            <div class="dropdown">
-                <a href="home.html">Home</a>
-                <a href="memberships.html">Memberships and Rentals</a>
-                <a href="events.html">Gym Events</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-        <nav >
+        <span class="header-logo-text">
+            <div class="logo"><a href="home.html"><img src="images/logo client project (color).svg" alt="logo"></a></div>
+            <h1>Memberships and Rentals</h1>
+        </span>
+        <nav>
             <a href="memberships.html">Memberships and Rentals</a>
             <a href="events.html">Gym Events</a>
             <a href="about.html">About Us</a>
@@ -44,7 +32,39 @@
         </nav>
     </header>
     <main>
-
+        <section class="waiver">
+            <h2><a href="images/Untitled document-(2).docx">Waiver Link</a></h2>
+            <p>
+                Print out and Complete this waiver, then bring with you to the gym to allow us to keep a file. 
+            </p>
+        </section>
+        <form action="/form-submissions-memberships.php" method="post" class="payment">
+            <legend>Membership Payment</legend>
+            <div id="form-selection-length">
+                <fieldset>
+                    <label for="day-pass">Day Pass</label>
+                    <input type="radio" id="day-pass" name="membership-length-form" value="Day">
+                    <label for="monthly-pass">Monthly Pass</label>
+                    <input type="radio" id="monthly-pass" name="membership-length-form" value="Monthly">
+                    <label for="yearly-pass">Yearly Pass</label>
+                    <input type="radio" id="yearly-pass" name="membership-length-form" value="Yearly">
+                    <label for="5-punch-pass">5 Punch Pass</label>
+                    <input type="radio" id="5-punch-pass" name="membership-length-form" value="5-Punch">
+                    <label for="10-punch-pass">10 Punch Pass</label>
+                    <input type="radio" id="10-punch-pass" name="membership-length-form" value="10-Punch">
+                </fieldset>
+            </div>
+            <label for="name">Name on Card</label><br>
+            <input type="text" id="name"> <br>
+            <label for="card-number">Number on Card</label><br>
+            <input type="number" id="card-number"><br>
+            <label for="expo-date">Expiration date</label><br>
+            <input type="date" id="expo-date"><br>
+            <label for="cvv">CVV</label><br>
+            <input type="number" id="cvv" maxlength=""><br>
+            <input type="submit" id="submit1">
+            <input type="reset" id="reset1">
+        </form>
     </main>
     <footer>
          <span>"Copyright <script>document.write(new Date().getFullYear());</script>".</span>
