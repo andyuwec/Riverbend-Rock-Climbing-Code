@@ -21,6 +21,9 @@ header{
     margin: -1rem;
     z-index: 1;
 }
+header h1{
+    text-align: center;
+}
 nav a{
     background-color: #ff8427;
     color: #1e212b;

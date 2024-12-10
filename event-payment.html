@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverbend Rock Climbing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Riverbend rock climbing" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="header-logo-text">
+            <div class="logo"><a href="home.html"><img src="images/logo client project (color).svg" alt="logo"></a></div>
+            <h1>Competitions</h1>
+        </span>
+        <nav>
+            <a href="memberships.html">Memberships and Rentals</a>
+            <a href="events.html">Gym Events</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="waiver">
+            <h2><a href="images/Untitled document-(2).docx">Waiver Link</a></h2>
+            <p>
+                Print out and Complete this waiver, then bring with you to the gym to allow us to keep a file. 
+            </p>
+        </section>
+        <form action="/form-submissions-memberships.php" method="post" class="payment">
+            <legend>Competition Payment</legend>
+            <div id="comp-division-selection">
+                <label>Which Division</label>
+                <fieldset>
+                    <label for="beginner">Beginner</label>
+                    <input type="radio" id="beginner" name="comp-division" value="beginner">
+                    <label for="intermediate">Intermediate</label>
+                    <input type="radio" id="intermediate" name="comp-division" value="intermediate">
+                    <label for="Advanced">Advanced</label>
+                    <input type="radio" id="Advanced" name="comp-division" value="Advanced">
+                </fieldset>
+            </div>
+            <div id="comp-gender-division">
+                <label>Which Gender Division</label>
+                <fieldset>
+                    <label for="men">Men's</label>
+                    <input type="radio" id="men" name="comp-gender-division" value="men">
+                    <label for="women">Women's</label>
+                    <input type="radio" id="women" name="comp-gender-division" value="women">
+                    <label for="enby/trans">Non-binary/Trans</label>
+                    <input type="radio" id="enby/trans" name="comp-gender-division" value="enby/trans">
+                </fieldset>
+            </div>
+            <label for="name">Name on Card</label><br>
+            <input type="text" id="name"> <br>
+            <label for="card-number">Number on Card</label><br>
+            <input type="number" id="card-number"><br>
+            <label for="expo-date">Expiration date</label><br>
+            <input type="date" id="expo-date"><br>
+            <label for="cvv">CVV</label><br>
+            <input type="number" id="cvv" maxlength=""><br>
+            <input type="submit" id="submit1">
+            <input type="reset" id="reset1">
+        </form>
+    </main>
+    <footer>
+         <span>"Copyright <script>document.write(new Date().getFullYear());</script>".</span>
+         <div class="footer-social">
+            <a href="https://www.instagram.com/"><img src="images/instagram-svgrepo-com.svg" alt="link to gym instagram"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook-svgrepo-com.svg" alt="link to gym facebook"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-svgrepo-com.svg" alt="link to gym youtube"></a>
+            <a href="https://x.com/?lang=en"><img src="images/twitter-svgrepo-com.svg" alt="link to gym twitter"></a>
+         </div>
+    </footer>
+</body>
+</html>
