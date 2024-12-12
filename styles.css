@@ -72,7 +72,8 @@ nav{
 }
 .photo-gallery{
     background-color: #fff;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 1rem; 
@@ -93,7 +94,7 @@ nav{
     font-size: 2.5rem;
     text-decoration: underline;
 }
-#pay-link{
+.pay-link{
     font-size: 2rem;
     text-decoration: none;
     color: #1e212b;
@@ -102,7 +103,7 @@ nav{
     padding: 1rem;
     border-radius: .5rem;
 }
-#pay-link:hover{
+.pay-link:hover{
     background-color: #ffc800;
 }
 .memberships-sec p{
@@ -166,6 +167,111 @@ input[type=submit], input[type=reset]{
     margin: .5rem;
     border-radius: .5rem;
 }
+.gear-shop-stuff div{
+    background-color: #fff;
+    color: #1e212b;
+    padding: 1rem;
+    width: 75%;
+    margin-top: 3rem;
+}
+.gear-shop-stuff h3{
+    font-size: 2rem;
+}
+.gear-shop-stuff p{
+    font-size: 1.35rem;
+}
+.gear-shop-stuff{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.shop-images{
+    height: 15rem;
+    margin: 1rem;
+}
+.event-page-sec{
+    background-color: #fff;
+    color: #1e212b;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+.event-page-sec h2{
+    text-decoration: underline; font-size: 1.5rem;
+}
+.event-page-sec a{
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+.about-us img{
+    max-height: 16rem;
+    border: 3px #041a65 solid;
+    margin: 1rem;
+    float: right;
+}
+#photo-about1{
+    float: left;
+}
+.about-us{
+    background-color: #fff;
+    color: #1e212b;
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.about-us h2{
+    font-size: 3.5rem;
+}
+.about-us p{
+    text-align: justify;
+}
+figcaption{
+    font-size: .5rem;
+}
+.contact-sec{
+    background-color: #fff;
+    color: #1e212b;
+    padding: 1.5rem;
+    margin: 2rem;
+}
+.contact-sec h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.contact-sec p{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.contact-button{
+    background-color: #ff8427;
+    margin: 3rem;
+    border: 4px #1e212b solid;
+    padding: 3rem;
+    border-radius: .5rem;
+}
+.contact-button a{
+    color: #041a65;
+    text-decoration: none;
+    font-size: 4rem;
+    margin: 2rem;
+    text-align: center;
+    align-self: center;
+}
+.contact-button:hover{
+    background-color: #ffc800;
+}
+.con-button-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#disclaim{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 footer{
     background-color: #fff;
@@ -184,4 +290,136 @@ footer{
     align-items: center;
     background-color: #fff;
     padding: .5rem;
+}
+#mapiframe{
+    width: 400px; 
+    height: 250px;
+    text-align: center;
+}
+#map{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:800px){
+    .header-logo-text h1{
+        font-size: 3rem;
+    }
+    nav a{
+        background-color: #ff8427;
+        color: #1e212b;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: .5rem;
+        border-radius: .25rem;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    h1{
+        font-size: 10rem;
+    }
+    .location h2{
+        font-size: 4rem;
+    }
+    .location{
+        display: block;
+        text-align: center;
+    }
+    .header-image{
+        max-width: 107%;
+    }
+    #mapiframe{
+        width: 600px;
+        height: 450px;
+    }
+    .contact-sec h2{
+        font-size: 4rem;
+    }
+    .contact-sec p{
+        font-size: 2.5rem;
+    }
+    .about-us p{
+        font-size: 2rem;
+    }
+    .about-us img{
+        max-height: 24rem;
+    }
+    .event-page-sec h2{
+        font-size: 4rem;
+    }
+    .event-page-sec p{
+        font-size: 1.75rem;
+    }
+    .memberships-sec h2{
+        font-size: 4rem;
+    }
+    .memberships-sec p{
+        font-size: 1.75rem;
+    }
+    label{
+        font-size: 2.25rem;
+    }
+    .shop-images{
+        max-height: 30rem;
+    }
+}
+@media (min-width:1100px){
+    .header-logo-text h1{
+        font-size: 4.5rem;
+    }
+    nav a{
+        font-size: 2.3rem;
+    }
+    .header-image{
+        max-width: 102.25%;
+        margin-left: -0.75%;
+    }
+    .location h2{
+        font-size: 5rem;
+    }
+    .location p{
+        font-size: 3rem;
+    }
+    .photo-gallery{
+        font-size: 3rem;
+    }
+    .photo-gallery img{
+        max-height: 28rem;
+    }
+    .pay-link{
+        font-size: 3rem;
+    }
+    .memberships-sec p{
+        font-size: 3rem;
+    }
+    .payment label{
+        font-size: 2rem;
+    }
+    .payment legend{
+        font-size: 2.5rem;
+    }
+    .payment input[type=text], input[type=number], input[type=date]{
+        height: 2rem; 
+        margin-left: 1rem;
+        border-left: 1px;   
+    }
+    .waiver h2 a{
+        font-size: 4rem;
+    }
+    .waiver p{
+        font-size: 2rem;
+    }
+    .about-us p{
+        font-size: 2.5rem;
+    }
+    .about-us h2{
+        font-size: 4rem;
+    }
+    .about-us{
+        padding: 2rem;
+    }
+    #map{
+        width: 1000;
+        height: 850;
+    }
 }

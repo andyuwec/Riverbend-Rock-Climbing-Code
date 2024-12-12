@@ -20,23 +20,11 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
-        <h1>Riverbend Rock Climbing</h1>
-        <div class="web-nav">
-            <span class="drop-header" onclick="toggleNav()">
-                <hr>
-                <hr>
-                <hr>
-            </span>
-            <div class="dropdown">
-                <a href="home.html">Home</a>
-                <a href="memberships.html">Memberships and Rentals</a>
-                <a href="events.html">Gym Events</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-        <nav >
+        <span class="header-logo-text">
+            <div class="logo"><a href="home.html"><img src="images/logo client project (color).svg" alt="logo"></a></div>
+            <h1>Event Sign Up</h1>
+        </span>
+        <nav>
             <a href="memberships.html">Memberships and Rentals</a>
             <a href="events.html">Gym Events</a>
             <a href="about.html">About Us</a>
@@ -44,7 +32,38 @@
         </nav>
     </header>
     <main>
-
+        <section class="waiver">
+            <h2><a href="images/Untitled document-(2).docx">Waiver Link</a></h2>
+            <p>
+                Print out and Complete this waiver, then bring with you to the gym to allow us to keep a file. 
+            </p>
+        </section>
+        <form action="/form-submissions-memberships.php" method="post" class="payment">
+            <legend>Class Signup & Payment</legend>
+            <div id="BB-date">
+                <label>Which Date</label>
+                <fieldset>
+                    <label for="3rd">January 3rd</label>
+                    <input type="radio" id="3rd" name="BB-class-date" value="Jan3rd">
+                    <label for="10th">January 10th</label>
+                    <input type="radio" id="10th" name="BB-class-date" value="Jan10th">
+                    <label for="17th">January 17th</label>
+                    <input type="radio" id="17th" name="BB-class-date" value="Jan17th">
+                    <label for="24th">January 24th</label>
+                    <input type="radio" id="24th" name="BB-class-date" value="Jan24th">
+                </fieldset>
+            </div>
+            <label for="name">Name on Card</label><br>
+            <input type="text" id="name"> <br>
+            <label for="card-number">Number on Card</label><br>
+            <input type="number" id="card-number"><br>
+            <label for="expo-date">Expiration date</label><br>
+            <input type="date" id="expo-date"><br>
+            <label for="cvv">CVV</label><br>
+            <input type="number" id="cvv" maxlength=""><br>
+            <input type="submit" id="submit1">
+            <input type="reset" id="reset1">
+        </form>
     </main>
     <footer>
          <span>"Copyright <script>document.write(new Date().getFullYear());</script>".</span>
